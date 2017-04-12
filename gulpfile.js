@@ -34,15 +34,22 @@ gulp.task('assets', function() {
       .pipe(gulp.dest('dist'));
 });
 
+gulp.task('scripts', function() {
+  return gulp.src('src/scripts/**', {since: gulp.lastRun('scripts')})
+      .pipe(newer('dist'))
+      .pipe(gulp.dest('dist/scripts'));
+});
+
 gulp.task('build', gulp.series(
   'clean',
-  gulp.parallel('sass','templates', 'assets'))
+  gulp.parallel('sass','templates', 'assets', 'scripts'))
 );
 
 gulp.task('watch', function() {
   gulp.watch('src', gulp.series('sass'));
   gulp.watch('src/assets/', gulp.series('assets'))
   gulp.watch('src/', gulp.series('templates'))
+  gulp.watch('src/scripts/', gulp.series('scripts'))
 });
 
 gulp.task('serve', function() {

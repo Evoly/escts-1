@@ -13,8 +13,9 @@
   <title>Главная</title>
 </head>
 <body>
-
+<!--
   <div class="container screen-8">
+
 <div class="screen-8-content">
   <h2 class="text-uppercase">Не заказывайте сертификат ISO не разобравшись <br> в следующих моментах</h2>
   <div class="list-item">
@@ -40,7 +41,7 @@
  </div>
 </div>
 
-  </div>
+  </div> -->
 
   <div class="container screen-2">
 
@@ -62,7 +63,7 @@
       </div>
      <div class="list-item">
        <div class="list-item_img">
-         <img src="resources/images/screen2-certificate.png" alt="">
+         <img src="resources/images/screen2-certificate.png" alt="@@">
        </div>
        <div class="list_text">
         <p class="screen2-list-header">Экспертность ­ значит ответственность за результат</p>
@@ -71,9 +72,10 @@
     </div>
   </div>
 
-   <div class="screen-2-video">
-     <div class="wrapper-video">
-       <iframe width="480" height="290" src="https://www.youtube.com/embed/txBfhpm1jI0" marginwidth:"0" marginheight="0" hspace="0" vspace="0" frameborder="0" allowfullscreen></iframe>
+   <div class="screen-2-video">     
+     <div class="wrapper-video js-videoWrapper">
+       <iframe class="videoIframe js-videoIframe" src="" frameborder="0" allowTransparency="true" allowfullscreen data-src="https://www.youtube.com/embed/txBfhpm1jI0?autoplay=1& modestbranding=1&rel=0&hl=sv"></iframe>
+       <button class="videoPoster js-videoPoster">Play video</button>
      </div>
      <p class="text-uppercase">Видео обращение от эксперта по сертификации ISO</p>
    </div>
@@ -82,10 +84,11 @@
 
   </div>
 
+  
 
-  <!-- <script
+  <script
     src="https://code.jquery.com/jquery-3.2.1.min.js"
     integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
     crossorigin="anonymous"></script>
-<script src="js/my-js.js"></script> -->
+<script src="scripts/my-js.js"></script>
 </body>
