@@ -1,0 +1,132 @@
+
+
+  body{
+  	color:#fff;
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 20px;
+    width: 1890px;
+    margin: 0 auto;
+  }
+
+.yellow {
+  color: #feee98;
+}
+.text-uppercase {
+  text-transform: uppercase;
+}
+p {margin: 0;}
+
+.flex { display: inline-flex; }
+
+.container {
+  display: block;
+  margin: 0 auto;
+}
+.screen-2 {
+  background: url(../resources/images/bg-screen2.png)no-repeat;
+	background-size: cover;
+}
+.white-block {
+  background-color: #fff;
+  border-radius: 3px;
+  color: #0b2d52;
+}
+.screen-2-content {
+  padding-top: 100px;
+  padding-left: 55px;
+}
+.screen-2-right-col {
+  max-width: 950px;
+  padding-top: 25px;
+}
+.screen-2 .list_text{
+  padding-left: 20px;
+  margin-bottom: 25px;
+}
+
+.list-item_img {
+  padding-top: 25px;
+}
+
+.screen2-list-header {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 24.58px;
+  letter-spacing: 0.05em;
+  margin-bottom: 25px;
+}
+.screen-2-video {
+  padding-left: 65px;
+  padding-top: 20px;
+  max-width: 480px;
+}
+.wrapper-video {
+  height: 290px;
+}
+.screen-2-video p {
+  display: flex;
+  font-family: 'PFDINTEXTCOMPPRO-REGULAR';
+  font-size: 28px;
+  letter-spacing: 0.025em;
+  line-height: 39px;
+  background-color: rgba(255,255,255,0.2);
+  min-height: 145px;
+  align-items: center;
+  padding-left: 50px;
+
+}
+
+/*iframe {
+marginwidth:"0";
+marginheight="0"
+hspace="0"
+vspace="0"
+frameborder="0"
+}*/
+.screen-8 {
+  background: url(../resources/images/bg-screen8.png)no-repeat;
+	background-size: cover;
+}
+.screen-8-content {
+  max-width: 1115px;
+  padding-left: 60px;
+}
+.screen8-list-header {
+  font-family: 'PFDINTEXTCOMPPRO-MEDIUM';
+  font-size: 25px;
+  line-height: 26px;
+  letter-spacing: 0.075em;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+/* TO DO
+.list_text p:last-child{
+    max-width: 740px;
+}*/
+.list-item {
+  display: inline-flex;
+  padding-bottom: 35px;
+}
+.list_items {
+  position: relative;
+  font-family: 'PFDINTEXTCOMPPRO-REGULAR';
+  font-size: 80px;
+  line-height: 71.75px;
+  padding-left: 40px;
+  margin-top: 0px;
+}
+.list_text {
+  padding-left: 75px;
+  line-height: 29px;
+  max-width: 895px
+}
+
+.list_items::before {
+  content: "#";
+  position: absolute;
+  top: -15px;
+  left: 0;
+  font-size: 35px;
+}
