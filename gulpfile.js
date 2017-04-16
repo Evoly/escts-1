@@ -11,7 +11,7 @@ var browserSync = require('browser-sync');
 
 
 gulp.task('sass', function(){
-    return gulp.src("src/style/1920.scss")
+    return gulp.src("src/style/*.scss")
         .pipe(sourcemaps.init())
         .pipe(sass())
         .pipe(sourcemaps.write('.'))

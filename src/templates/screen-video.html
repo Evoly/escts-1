@@ -1,0 +1,47 @@
+<div class="container screen-2">
+  <div class="screen-2-content">
+    <h1>YouTube embed poster frame widget</h1>
+
+    <!-- the class "videoWrapper169" means a 16:9 aspect ration video. Another option is "videoWrapper43" for 4:3. -->
+    <div class="videoWrapper videoWrapper169 js-videoWrapper">
+      <!-- YouTube iframe. -->
+      <!-- note the iframe src is empty by default, the url is in the data-src="" argument -->
+      <!-- also note the arguments on the url, to autoplay video, remove youtube adverts/dodgy links to other videos, and set the interface language -->
+      <iframe class="videoIframe js-videoIframe" src="" frameborder="0" allowTransparency="true" allowfullscreen data-src="https://www.youtube.com/embed/txBfhpm1jI0?autoplay=1& modestbranding=1&rel=0&hl=sv"></iframe>
+      <!-- the poster frame - in the form of a button to make it keyboard accessible -->
+      <button class="videoPoster js-videoPoster" style="background-image:url(http://i2.wp.com/www.cgmeetup.net/home/wp-content/uploads/2015/05/Avengers-Age-of-Ultron-UI-Reel-1.jpg);">Play video</button>
+    </div>
+
+    <button onclick="videoStop()">external close button</button>
+
+    <p>A widget to allow smooth transition between poster frame, YouTube video and back.</p>
+
+    <ul>
+      <li>Expands to fit any container with correct aspect ratio (16:9 and 4:3 variations).</li>
+      <li>Fully responsive on small screens.</li>
+      <li>Not using the Youtube js API (only because it's another http call and we'd use barely any of it)</li>
+      <li>Smooth transition between poster and video</li>
+      <li>Poster frame doesn't need any "play button" images embedded in, they're CSS elements that part of the widget, so are retina res, easily coloured and have a hover state transition.</li>
+      <li>videoStop() script, useful for buttons or javascript events (eg closing modals), that removes the src of the youtube video, preventing it from playing after it's hidden. Can be targeted at a particular video, or all on the page.</li>
+      <li>Delegated click event, allowing the video element to be ajaxed in after page initilisation, and still work.</li>
+      <li>Keyboard accessible (and a focus state to show when you've correctly selected it)</li>
+    </ul>
+
+    <div class="videoWrapper videoWrapper169 js-videoWrapper">
+      <!-- YouTube iframe. -->
+      <!-- note the iframe src is empty by default, the url is in the data-src="" argument -->
+      <!-- also note the arguments on the url, to autoplay video, remove youtube adverts/dodgy links to other videos, and set the interface language -->
+      <iframe class="videoIframe js-videoIframe" src="" frameborder="0" allowTransparency="true" allowfullscreen data-src="https://www.youtube.com/embed/6Dakd7EIgBE?autoplay=1& modestbranding=1&rel=0&hl=sv"></iframe>
+      <!-- the poster frame - in the form of a button to make it keyboard accessible -->
+      <button class="videoPoster js-videoPoster" style="background-image:url(http://i2.wp.com/www.cgmeetup.net/home/wp-content/uploads/2015/05/Avengers-Age-of-Ultron-UI-Reel-1.jpg);">Play video</button>
+    </div>
+
+    <button onclick="videoStop()">external close button</button>
+ <!-- <div class="screen-2-video">
+   <div class="wrapper-video">
+     <iframe width="480" height="290" src="https://www.youtube.com/embed/txBfhpm1jI0" marginwidth:"0" marginheight="0" hspace="0" vspace="0" frameborder="0" allowfullscreen></iframe>
+   </div>
+   <p class="text-uppercase">Видео обращение от эксперта по сертификации ISO</p>
+ </div> -->
+ </div>
+</div>
