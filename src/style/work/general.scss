@@ -18,6 +18,11 @@
 p {margin: 0;}
 a {text-decoration: none;}
 button {font: inherit}
+input{
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+}
 
 .flex { display: inline-flex; }
 .center {text-align: center;}
@@ -26,6 +31,13 @@ button {font: inherit}
   display: block;
   margin: 0 auto;
 }
+
+.screen-1 {
+  background: url(../resources/images/bg-screen1.png)no-repeat;
+	background-size: cover;
+}
+
+
 .screen-2 {
   background: url(../resources/images/bg-screen2.png)no-repeat;
 	background-size: cover;

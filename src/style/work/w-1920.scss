@@ -4,7 +4,9 @@
 }
 
 h1 {
-
+  font-family: 'PFDINTEXTCOMPPRO-MEDIUM';
+  font-size: 60px;
+  letter-spacing: 0.012em;
 }
 
 h2 {
@@ -20,10 +22,122 @@ h4 {
   font-size: 30px;
   letter-spacing: 0.075em;
 }
-.screen-1, .screen-2, .screen-8, .screen-11, .screen-16  {
+.screen-2, .screen-8, .screen-11, .screen-16  {
   padding-top: 140px;
 }
+.screen-1 {
+  padding-top: 180px;
+  padding-right: 150px;
+  padding-bottom: 40px;
 
+  & h1{
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  &_header{
+    font-family: 'PFDINTEXTCOMPPRO-REGULAR';
+  }
+
+  & >p {
+    font-size: 24px;
+    font-weight: 500;
+    padding-top: 25px;
+    letter-spacing: 0.05em;
+  }
+
+  &-content {
+    padding: 55px 200px 0 160px;
+  }
+
+  &-left-col {
+    width: 58%;
+    font-size: 18px;
+    letter-spacing: 0.0035em;
+    padding-top: 40px;
+    padding-right: 120px;
+  }
+
+  &-list-header {
+    font-family: 'PFDINTEXTCOMPPRO-MEDIUM';
+    font-size: 25px;
+    letter-spacing: 0.003em;
+  }
+
+  &-right-col {
+    width: 42%;
+    max-height: 510px;
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 15px;
+    padding: 50px 50px 0 50px;
+  }
+
+  &-form_header {
+    font-family: 'PFDINTEXTCOMPPRO-MEDIUM';
+    font-size: 30px;
+    letter-spacing: 0.1em;
+    padding-bottom: 15px;
+  }
+
+  &_form_field {
+    width: 100%;
+    background-color: #fff;
+    font-weight: 500;
+    font-size: 18px;
+    color: black;
+    opacity: 0.87;
+    height: 65px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    align-items: center;
+
+      & img{
+        width: 15px;
+        height: 15px;
+        padding-left: 25px;
+        padding-right: 15px;
+      }
+
+      & input {
+        width: 50%;
+        padding-left: 10px;
+        font-weight: 300;
+        letter-spacing: 0.0035em;
+      }
+  }
+
+}
+.screen-1 .list-item {
+  padding-bottom: 75px;
+}
+.screen-1 .list-item_img {
+  padding-top: 0px;
+  padding-left: 20px;
+}
+.screen-1 .list_text {
+  flex-direction:column;
+  justify-content:center;
+  align-items: left;
+  padding-left: 25px;
+}
+
+.screen-1-form_header + p{
+  font-size: 19px;
+  margin-bottom: 25px;
+  letter-spacing: 0.025em;
+  line-height: 27px;
+}
+
+.screen-1 .yellow-button {
+  height: 85px;
+  font-size: 18px;
+  margin-bottom: 45px;
+}
+.form-bottom-text {
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 0.0035em;
+}
 .screen-2-content h2 {
   margin-top: 0px;
   margin-bottom: 15px;
