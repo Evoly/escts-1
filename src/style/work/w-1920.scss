@@ -1,4 +1,7 @@
 
+body {
+  width: 1890px;
+}
 .container {
   padding: 0 115px 0 150px;
 }
@@ -22,7 +25,7 @@ h4 {
   font-size: 30px;
   letter-spacing: 0.075em;
 }
-.screen-2, .screen-8, .screen-11, .screen-16  {
+.screen-2, .screen-8, .screen-11,.screen-7, .screen-16  {
   padding-top: 140px;
 }
 .screen-1 {
@@ -102,6 +105,7 @@ h4 {
         width: 50%;
         padding-left: 10px;
         font-weight: 300;
+        font-style: italic;
         letter-spacing: 0.0035em;
       }
   }
@@ -119,6 +123,19 @@ h4 {
   justify-content:center;
   align-items: left;
   padding-left: 25px;
+
+    & a {
+      font-style: italic;
+      border-bottom: 1px solid rgba(102, 111, 120, 0.47);
+      padding-bottom: 8px;
+    }
+
+}
+
+ .screen-1-arrow::after {
+  content: url(../resources/images/icon_arrow.png);
+  position: absolute;
+  padding-top: 2px;
 }
 
 .screen-1-form_header + p{

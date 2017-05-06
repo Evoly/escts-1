@@ -1,4 +1,10 @@
 
+
+// Маска для поля ввода телефона
+$(document).ready(function(){
+   $("input[name='tel']").inputmask("8 (999) 999-99-99");
+});
+
 // screen-2 video
 
 // poster frame click event
@@ -35,9 +41,29 @@ function videoStop($wrapper) {
   $iframe.attr('src','');
 }
 
+// screen 7 form
+
+$('a.form-nextbutton').click(function(e){
+
+  e.preventDefault();
+  // $(this).parents('.screen-7-form_step').removeClass('active');
+  // $('.screen-7-form_step').next().addClass('active');
+  $(this).parents('.screen-7-form_step').removeClass('active');
+	$(this).parents('.screen-7-form_step').next().addClass('active');
+
+  });
+
+  $('a.form-prevbutton').click(function(e){
+
+    e.preventDefault();
+
+    $(this).parents('.screen-7-form_step').removeClass('active');
+    $(this).parents('.screen-7-form_step').prev().addClass('active');
+
+    });
 
 
-// Форма на 11 экране
+// screen 11 form
 
 $('a.modal').click(function(e){
 
