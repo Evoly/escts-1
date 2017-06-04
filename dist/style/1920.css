@@ -492,6 +492,24 @@ ul {
   background: url(../resources/images/bg-screen1.png) no-repeat;
   background-size: cover; }
 
+.sprites {
+  background: url(../resources/images/sprites.png) no-repeat; }
+
+.screen1-box {
+  width: 77px;
+  height: 53px;
+  background-position: 20px 0; }
+
+.screen1-calendar {
+  width: 77px;
+  height: 50px;
+  background-position: 20px -54px; }
+
+.screen1-car {
+  width: 77px;
+  height: 50px;
+  background-position: 20px -105px; }
+
 .screen-2 {
   background: url(../resources/images/bg-screen2.png) no-repeat;
   background-size: cover; }
@@ -820,9 +838,17 @@ ul {
     .screen-16-left-col_items {
       margin-bottom: 40px;
       font-size: 18px;
-      margin-top: 5px; }
+      margin-top: 5px;
+      line-height: 23px; }
+    .screen-16-left-col_header {
+      letter-spacing: 0.1em;
+      font-family: "PFDINTEXTCOMPPRO-REGULAR";
+      font-weight: 400;
+      font-size: 20px;
+      padding-bottom: 15px; }
   .screen-16-right-col {
     width: 62%;
+    max-width: 800px;
     padding-top: 35px;
     font-size: 0px;
     padding-right: 80px;
@@ -841,7 +867,7 @@ ul {
   width: 100%;
   height: 100%;
   background-color: #fff;
-  opacity: 0.77;
+  opacity: 0;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -855,17 +881,12 @@ ul {
   position: absolute;
   top: 0px;
   left: 0px;
-  opacity: 0.1; }
+  opacity: 0.77; }
+
+.screen16-lens-hide:hover::before {
+  opacity: 0; }
 
 .screen16-lens::after {
-  content: url(../resources/images/lens.png);
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  top: 38%;
-  left: 42%; }
-
-.screen16-lens:hover::after {
   content: url(../resources/images/lens.png);
   width: 50px;
   height: 50px;
@@ -874,16 +895,41 @@ ul {
   left: 42%;
   opacity: 0; }
 
+.screen16-lens:hover::after {
+  content: url(../resources/images/lens.png);
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 38%;
+  left: 42%;
+  opacity: 1; }
+
+.screen16-lens-hide:hover::after {
+  content: ""; }
+
 .screen16-pointer {
   max-width: 16%;
   position: absolute;
   bottom: -27px;
   right: 40px; }
 
-.screen-16-map img {
+.big-img {
+  transform: scale(2, 2);
+  z-index: 100; }
+
+.screen-16-map {
   width: 100%;
-  max-height: 420px;
+  height: 420px;
   border-radius: 5px; }
+
+#map {
+  width: 800px;
+  max-width: 100%;
+  height: 420px; }
+
+#map > ymaps {
+  border-radius: 5px;
+  overflow: hidden; }
 
 .screen-11 {
   height: 1080px; }

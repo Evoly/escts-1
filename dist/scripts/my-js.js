@@ -100,3 +100,49 @@ $(document).mouseup(function (e) {
     }
 });
 });
+
+// screen 16 images
+$('div.screen-16-right-col_img').click(function(e) {
+  e.preventDefault();
+
+  $(this).toggleClass('big-img screen16-lens-hide');
+  $('.screen16-pointer').toggle();
+
+
+
+
+
+  // $('body').click(function(e) {
+  //   e.preventDefault();
+  //
+  //   $('div.screen-16-right-col_img').removeClass('big-img');
+  //   $('.screen16-pointer').css('display','block');
+  //
+  // });
+
+});
+
+
+
+
+//screen-16 yandex map
+
+ymaps.ready(function () {
+    var myMap = new ymaps.Map('map', {
+            center: [55.717873, 37.688944],
+            controls: ['trafficControl'],
+            zoom: 16
+        }, {
+            searchControlProvider: 'yandex#search',
+            suppressMapOpenBlock: true
+
+        });
+
+      myMap.geoObjects
+          .add(new ymaps.Placemark([55.717873, 37.688944], {
+            balloonContent: ''
+        }, {
+            preset: 'islands#dotIcon',
+            iconColor: '#1e1a63'
+        }))
+});
